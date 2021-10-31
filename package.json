@@ -4,11 +4,15 @@
   "scripts": {
     "heroku-postbuild": "ng build --prod",
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
+ },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
@@ -22,6 +26,8 @@
     "@angular/router": "~12.2.0",
     "document-register-element": "^1.7.2",
     "elements-zone-strategy": "^10.0.1",
+    "express": "^4.17.1",
+    "path": "^0.12.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"
